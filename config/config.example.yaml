@@ -1,0 +1,21 @@
+server:
+    runMode: debug # debug, release, test
+    httpPort: 8080
+    shutdownTimeout: 1 # second
+    apiVersion: v1
+
+mysql:
+    username: root
+    password: root_password
+    host: localhost:3306
+    dbName: go_backend_db
+    tablePrefix: go_backend_
+    maxIdleConns: 10
+    maxOpenConns: 10
+    maxLifetime: 1 # hour
+
+log:
+    maxSize: 10 # megabytes
+    maxBackups: 10 # files
+    maxAge: 90 # days
+    compress: false
